@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bulma/css/bulma.css';
+import FormFood from './components/FoodForm'
+import Foodbox from "./components/FoodBox"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavBar from './components/NavBar'
+import Added from './components/Added'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <div className='divForm'>
+        <div>
+          
+          <Foodbox />
+        </div>
+        <div className='Divfood'>
+          <Added/>
+          <FormFood/>
+          </div>
+      </div>
+
     </div>
   );
 }

@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.divForm{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.Divfood{
+  margin-left: 20px;
+  
+}
+
+.cor{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.colorform {
+padding-top: 30px;
+padding-right: 30px
+
+}
